@@ -2,8 +2,7 @@
 
   <div class="wrapper">
 
-    <!--<a class="site-title dot" href="{{ site.baseurl }}/">{{ site.data.site-info.site-name }}</a>-->
-    <img class="logo" src="{{ site.baseurl }}/images/{{ site.data.site-info.logo }}" alt="{{ site.data.site-info.site-name }}" />
+    {% include logo.html logo=site.data.site-info.logo %}
 
     {% if site.data.navigation.items.length > 0 %}
       <nav class="site-nav">

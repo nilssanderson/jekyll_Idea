@@ -8,6 +8,9 @@
       <img src="{{ site.baseurl }}/images/{{ section.image }}" alt="{{ section.content.title }}" />
     </div>
     <div class="content">
+      {% if section.content.icon %}
+        <img class="icon" src="{{ site.baseurl }}/images/icons/{{ section.content.icon }}" alt="{{ section.content.title }}" />
+      {% endif %}
       <h1 class="dot">{{ section.content.title }}</h1>
       <p>{{ section.content.description }}</p>
     </div>
