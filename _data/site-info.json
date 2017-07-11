@@ -1,0 +1,55 @@
+{
+  "site-name": "Business idea",
+  "site-description": "Some people have an ability to write placeholder text... It's an art you're basically born with.",
+  "blog-name": "New BlOG Name",
+  "sections": [
+    {
+      "cssId": "test1",
+      "backgroundColor": "#fff",
+      "layout": {
+        "alignment": "left"
+      },
+      "image": "default.jpg",
+      "content": {
+        "title": "test1",
+        "description": "Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. My text is long and beautiful, as, it has been well documented, are various other parts of my website."
+      }
+    },
+    {
+      "cssId": "test2",
+      "backgroundColor": "#eee",
+      "layout": {
+        "alignment": "right"
+      },
+      "image": "default.jpg",
+      "content": {
+        "title": "test2",
+        "description": "Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. My text is long and beautiful, as, it has been well documented, are various other parts of my website."
+      }
+    },
+    {
+      "cssId": "test3",
+      "backgroundColor": "#fff",
+      "layout": {
+        "alignment": "left"
+      },
+      "image": "default.jpg",
+      "content": {
+        "title": "test3",
+        "description": "Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. My text is long and beautiful, as, it has been well documented, are various other parts of my website."
+      }
+    },
+    {
+      "cssId": "test4",
+      "backgroundColor": "#eee",
+      "layout": {
+        "alignment": "right"
+      },
+      "image": "default.jpg",
+      "content": {
+        "title": "test4",
+        "description": "Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. My text is long and beautiful, as, it has been well documented, are various other parts of my website."
+      }
+    }
+  ]
+}

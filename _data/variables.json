@@ -1,0 +1,9 @@
+{
+    "font-sans": "Helvetica, sans-serif",
+    "colors-error": "#333",
+    "colors-success": "#0f0",
+    "welcome-background-color": "#1F2025",
+    "welcome-background-text-color": "#fff",
+    "welcome-background-image": "url(../images/default-bg.jpg)",
+    "default-image": "url(../images/default-alt.svg)"
+}

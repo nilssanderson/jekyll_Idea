@@ -1,0 +1,373 @@
+$header-height: 50px;
+$base-padding: .5rem;
+
+body {
+    background-color: #F9FAFB;
+    font-family: 'OpenSans';
+    font-size: $base-font-size;
+}
+
+    section {
+        padding-bottom: $header-height;
+        padding-top: $header-height;
+    }
+
+
+/**
+ * Site header
+ */
+.site-header {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+    .site-header .wrapper {
+        align-items: center;
+        box-shadow: 0 0 2px 2px #ccc;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: $header-height;
+        justify-content: space-around;
+
+        &:after {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,7db9e8+100 */
+            background: rgb(255,255,255); /* Old browsers */
+            background: -moz-linear-gradient(top, rgba(224,224,224,.5) 0%, rgba(224,224,224,0) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(224,224,224,.5) 0%,rgba(224,224,224,0) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(224,224,224,.5) 0%,rgba(224,224,224,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+            bottom: 0;
+            content: '';
+            display: none;
+            height: 5px;
+            position: absolute;
+            width: 100%;
+        }
+
+        .trigger {
+            display: none;
+
+            @include media-query($large) { display: block; }
+        }
+
+        .site-title,
+        .site-nav {
+            padding: ($base-padding * 3);
+        }
+
+        .site-title {
+            color: $nav-font-color;
+            flex: 2;
+            font-family: $nav-font;
+            font-size: $nav-font-size;
+            line-height: 0;
+            text-decoration: none;
+
+            &:visited,
+            &:hover { color: $nav-font-color; }
+
+            &:after {
+                content: '.';
+                color: $highlight-color;
+            }
+        }
+
+        .site-nav { flex: 1; text-align: right; }
+        .site-nav a {
+            color: $nav-font-color;
+            font-family: $base-font-family;
+            margin-left: $base-padding;
+            text-decoration: none;
+        }
+
+        .menu-icon {
+            display: block;
+            line-height: 0;
+            text-align: right;
+
+            @include media-query($large) {
+                display: none;
+            }
+
+            > svg {
+                height: 15px;
+                width: 18px;
+            }
+        }
+    }
+
+
+/**
+ * Welcome section
+ */
+
+section#welcome {
+    align-items: center;
+    background: $welcome-background-color $welcome-background-image center no-repeat;
+    background-size: cover;
+    color: $welcome-background-text-color;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    h1, h3, .btn {
+        font-family: $nav-font;
+        margin: 0 0 ($base-padding * 1.75);
+        text-align: center;
+        text-decoration: none;
+    }
+
+    h1 { font-size: $nav-font-size * 1.65; padding-top: $header-height; }
+    h3 { font-family: 'OpenSans'; font-size: $nav-font-size * .9; font-weight: normal; margin-bottom: ($base-padding * 5); }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $nav-font;
+    text-decoration: none;
+}
+
+.btn, .button {
+    background-color: $highlight-color;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: ($base-padding * 2) ($base-padding * 4);
+
+    &:hover {
+        background-color: darken($highlight-color, 5%);
+    }
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+section.content {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: ($base-padding * 3);
+
+    @include media-query($large) {
+        padding: $header-height;
+    }
+
+    &.left {
+        flex-direction: column;
+
+        @include media-query($large) {
+            flex-direction: row;
+        }
+    }
+
+    &.right {
+        flex-direction: column;
+
+        @include media-query($large) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .image {
+        flex: 2;
+    }
+
+    .content {
+        flex: 2;
+
+        @include media-query($large) {
+            margin: ($base-padding * 6);
+        }
+    }
+}
+
+
+section#idea {
+    margin-bottom: $header-height;
+
+    h1, h3, .btn {
+        font-family: $nav-font;
+        margin: 0 0 ($base-padding * 1.75);
+        text-align: center;
+        text-decoration: none;
+    }
+
+    h1 { font-size: $nav-font-size * 1.65; padding-top: $header-height; }
+    h3 { font-family: 'OpenSans'; font-size: $nav-font-size * .9; font-weight: normal; margin-bottom: ($base-padding * 2.5); }
+}
+
+    /**
+    * Card
+    */
+    .posts {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+
+        @include media-query($large) {
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 1000px;
+            width: 90vw;
+        }
+    }
+
+    .card {
+        background-color: #eee;
+        background-image: none !important;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: center;
+        margin: ($base-padding * 2);
+        overflow: hidden;
+        padding: ($base-padding * 2);
+        text-align: center;
+
+        img {
+            display: inline-block;
+            height: 100%;
+            width: auto;
+        }
+    }
+
+
+/**
+ * Newsletter
+ */
+
+section#newsletter {
+    background-color: lighten($brand-color, 10%);
+    color: #fff;
+
+    h1, h3, .btn, .button {
+        font-family: $nav-font;
+        margin: 0 0 ($base-padding * 1.5);
+        text-align: center;
+        text-decoration: none;
+    }
+
+    h1 { font-size: $nav-font-size * 1.65; padding-top: $header-height; }
+    h3 { color: #ddd; font-family: 'OpenSans'; font-size: $nav-font-size * .9; font-weight: normal; }
+
+    div#mc_embed_signup {
+        background-color: transparent;
+
+        h2 { display: none; }
+
+        // overrides
+        .button {
+            background-color: $highlight-color !important;
+            border-radius: 25px !important;
+            cursor: pointer;
+            height: 3rem !important;
+            line-height: 0 !important;
+            padding: ($base-padding * 2) ($base-padding * 4) !important;
+
+            &:hover {
+                background-color: darken($highlight-color, 5%) !important;
+            }
+        }
+
+        form {
+            margin: 0 auto;
+            padding: 1rem 0 0;
+            text-align: center;
+            width: 70%;
+
+            .mc-field-group {
+                margin: 0;
+                width: 100%;
+
+                + .mc-field-group {
+                    display: none;
+                }
+
+                label {
+                    display: none;
+                    font-family: 'OpenSans';
+                    margin-bottom: .5rem;
+                }
+
+                input {
+                    border-radius: 25px;
+                    border: none;
+                    margin: 0 auto;
+                    padding: 1rem;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: #444350;
+    color: #fff;
+    padding-bottom: $header-height;
+    padding-top: $header-height;
+
+    h1, h3, .btn, .button {
+        font-family: $nav-font;
+        margin: 0 0 ($base-padding * 1.5);
+        text-align: center;
+        text-decoration: none;
+    }
+
+    h1 { font-size: $nav-font-size * 1.65; margin-bottom: ($base-padding * 6); padding-top: $header-height; }
+    h3 { color: #ddd; font-family: 'OpenSans'; font-size: $nav-font-size * .9; font-weight: normal; }
+
+    .site-title {
+        color: #fff;
+        flex: 2;
+        font-family: $nav-font;
+        line-height: 0;
+        text-decoration: none;
+
+        &:visited,
+        &:hover { color: #fff; }
+
+        &:after {
+            content: '.';
+            color: $highlight-color;
+        }
+    }
+
+    .wrapper {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .site-nav a {
+            display: block;
+        }
+
+        .social-media-links {
+            a {
+                margin: 0 $base-padding;
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

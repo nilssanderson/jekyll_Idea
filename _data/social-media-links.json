@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "title": "Linkedin",
+      "url": "http://linkedin.com/nilssanderson",
+      "image": "linkedin.png"
+    },
+    {
+      "title": "Facebook",
+      "url": "http://facebook.com/nilssanderson",
+      "image": "facebook.png"
+    },
+    {
+      "title": "Twitter",
+      "url": "http://twitter.com/nilssanderson",
+      "image": "twitter.png"
+    }
+  ]
+}
