@@ -31,7 +31,7 @@
       "cssId": "test3",
       "backgroundColor": "#fff",
       "layout": {
-        "alignment": "left"
+        "alignment": "top"
       },
       "image": "default.jpg",
       "content": {
@@ -43,7 +43,7 @@
       "cssId": "test4",
       "backgroundColor": "#eee",
       "layout": {
-        "alignment": "right"
+        "alignment": "bottom"
       },
       "image": "default.jpg",
       "content": {

@@ -175,6 +175,40 @@ section.content {
         }
     }
 
+    &.top {
+        flex-direction: column;
+
+        @include media-query($large) {
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 2;
+
+            @include media-query($large) {
+                margin: ($base-padding * 6);
+                max-width: $large;
+            }
+        }
+    }
+
+    &.bottom {
+        flex-direction: column;
+
+        @include media-query($large) {
+            flex-direction: column-reverse;
+        }
+
+        .content {
+            flex: 2;
+
+            @include media-query($large) {
+                margin: ($base-padding * 6);
+                max-width: $large;
+            }
+        }
+    }
+
     .image {
         flex: 2;
     }
