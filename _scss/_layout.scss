@@ -1,4 +1,4 @@
-$header-height: 50px;
+$header-height: 60px;
 $base-padding: .5rem;
 
 body {
@@ -12,12 +12,22 @@ body {
         padding-top: $header-height;
     }
 
+.logo {
+    height: auto;
+    width: 90px;
+}
+
 
 /**
  * Site header
  */
 .site-header {
-    background-color: #ffffff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,7db9e8+100 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,.9) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,.9) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
     position: fixed;
     top: 0;
     width: 100%;
@@ -31,7 +41,7 @@ body {
         flex-direction: row;
         flex-wrap: nowrap;
         height: $header-height;
-        justify-content: space-around;
+        justify-content: flex-start;
 
         &:after {
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,7db9e8+100 */
@@ -47,6 +57,10 @@ body {
             position: absolute;
             width: 100%;
         }
+
+            .logo {
+                margin-left: ($base-padding * 3);
+            }
 
         .trigger {
             display: none;
@@ -104,6 +118,20 @@ body {
 /**
  * Welcome section
  */
+h1 { margin-bottom: ($base-padding * 4); }
+
+.dot {
+    font-family: $nav-font;
+    text-decoration: none;
+
+    &:visited,
+    &:hover { color: $nav-font-color; }
+
+    &:after {
+        content: '.';
+        color: $highlight-color;
+    }
+}
 
 section#welcome {
     align-items: center;
@@ -124,8 +152,13 @@ section#welcome {
         text-decoration: none;
     }
 
-    h1 { font-size: $nav-font-size * 1.65; padding-top: $header-height; }
-    h3 { font-family: 'OpenSans'; font-size: $nav-font-size * .9; font-weight: normal; margin-bottom: ($base-padding * 5); }
+    h1 { font-size: $nav-font-size * 1.65; padding-top: $header-height; text-shadow: 2px 2px #222; }
+    h3 { font-family: 'OpenSans'; font-size: $nav-font-size * .9; font-weight: normal; margin-bottom: ($base-padding * 5); text-shadow: 2px 2px #222; }
+
+    .btn {
+        background-color: $welcome-background-cta-background-color;
+        color: $welcome-background-cta-text-color;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

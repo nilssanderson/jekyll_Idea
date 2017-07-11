@@ -407,14 +407,26 @@ body {
   font-size: 16px; }
 
 section {
-  padding-bottom: 50px;
-  padding-top: 50px; }
+  padding-bottom: 60px;
+  padding-top: 60px; }
+
+.logo {
+  height: auto;
+  width: 90px; }
 
 /**
  * Site header
  */
 .site-header {
-  background-color: #ffffff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,7db9e8+100 */
+  background: white;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.9) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
   position: fixed;
   top: 0;
   width: 100%;
@@ -430,9 +442,9 @@ section {
       flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  height: 50px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  height: 60px;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
   .site-header .wrapper:after {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,7db9e8+100 */
     background: white;
@@ -449,6 +461,8 @@ section {
     height: 5px;
     position: absolute;
     width: 100%; }
+  .site-header .wrapper .logo {
+    margin-left: 1.5rem; }
   .site-header .wrapper .trigger {
     display: none; }
     @media screen and (min-width: 769px) {
@@ -493,10 +507,22 @@ section {
 /**
  * Welcome section
  */
+h1 {
+  margin-bottom: 2rem; }
+
+.dot {
+  font-family: "OpenSansCondensed";
+  text-decoration: none; }
+  .dot:visited, .dot:hover {
+    color: #333333; }
+  .dot:after {
+    content: '.';
+    color: #2a7ae2; }
+
 section#welcome {
   -ms-flex-align: center;
       align-items: center;
-  background: #1F2025 url(../images/default-bg.jpg) center no-repeat;
+  background: #1F2025 url(../images/compass.jpg) center no-repeat;
   background-size: cover;
   color: #fff;
   display: -ms-flexbox;
@@ -515,12 +541,17 @@ section#welcome {
     text-decoration: none; }
   section#welcome h1 {
     font-size: 2.31rem;
-    padding-top: 50px; }
+    padding-top: 60px;
+    text-shadow: 2px 2px #222; }
   section#welcome h3 {
     font-family: 'OpenSans';
     font-size: 1.26rem;
     font-weight: normal;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 2.5rem;
+    text-shadow: 2px 2px #222; }
+  section#welcome .btn {
+    background-color: #2A7AE2;
+    color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "OpenSansCondensed";
@@ -548,7 +579,7 @@ section.content {
   padding: 1.5rem; }
   @media screen and (min-width: 769px) {
     section.content {
-      padding: 50px; } }
+      padding: 60px; } }
   section.content.left {
     -ms-flex-direction: column;
         flex-direction: column; }
@@ -602,7 +633,7 @@ section.content {
         margin: 3rem; } }
 
 section#idea {
-  margin-bottom: 50px; }
+  margin-bottom: 60px; }
   section#idea h1, section#idea h3, section#idea .btn {
     font-family: "OpenSansCondensed";
     margin: 0 0 0.875rem;
@@ -610,7 +641,7 @@ section#idea {
     text-decoration: none; }
   section#idea h1 {
     font-size: 2.31rem;
-    padding-top: 50px; }
+    padding-top: 60px; }
   section#idea h3 {
     font-family: 'OpenSans';
     font-size: 1.26rem;
@@ -670,7 +701,7 @@ section#newsletter {
     text-decoration: none; }
   section#newsletter h1 {
     font-size: 2.31rem;
-    padding-top: 50px; }
+    padding-top: 60px; }
   section#newsletter h3 {
     color: #ddd;
     font-family: 'OpenSans';
@@ -713,8 +744,8 @@ section#newsletter {
 footer {
   background-color: #444350;
   color: #fff;
-  padding-bottom: 50px;
-  padding-top: 50px; }
+  padding-bottom: 60px;
+  padding-top: 60px; }
   footer h1, footer h3, footer .btn, footer .button {
     font-family: "OpenSansCondensed";
     margin: 0 0 0.75rem;
@@ -723,7 +754,7 @@ footer {
   footer h1 {
     font-size: 2.31rem;
     margin-bottom: 3rem;
-    padding-top: 50px; }
+    padding-top: 60px; }
   footer h3 {
     color: #ddd;
     font-family: 'OpenSans';
