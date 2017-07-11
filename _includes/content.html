@@ -4,15 +4,24 @@
     class="content {{ section.layout.alignment }}"
     style="background-color: {{ section.backgroundColor }};"
   >
+
+    <!-- section image -->
     <div class="image">
       <img src="{{ site.baseurl }}/images/{{ section.image }}" alt="{{ section.content.title }}" />
     </div>
+
     <div class="content">
+      <!-- section icon -->
       {% if section.content.icon %}
         <img class="icon" src="{{ site.baseurl }}/images/icons/{{ section.content.icon }}" alt="{{ section.content.title }}" />
       {% endif %}
+
+      <!-- section title -->
       <h1 class="dot">{{ section.content.title }}</h1>
+
+      <!-- section description -->
       <p>{{ section.content.description }}</p>
     </div>
+
   </section>
 {% endfor %}

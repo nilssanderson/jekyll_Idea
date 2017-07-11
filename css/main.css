@@ -806,6 +806,9 @@ footer {
       footer .wrapper .social-media-links a img {
         height: 30px;
         width: 30px; }
+  footer .copyright {
+    font-size: 12.8px;
+    margin-top: 4rem; }
 
 /**
  * Syntax highlighting styles
