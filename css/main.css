@@ -811,8 +811,7 @@ footer {
       footer .wrapper .social-media-links a:hover {
         opacity: .8; }
   footer .copyright {
-    font-size: 12.8px;
-    margin-top: 4rem; }
+    font-size: 12.8px; }
 
 /**
  * Syntax highlighting styles

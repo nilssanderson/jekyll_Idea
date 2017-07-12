@@ -6,6 +6,139 @@
   "logo-white": "logo-white.svg",
   "sections": [
     {
+      "cssId": "test0",
+      "backgroundColor": "#fff",
+      "layout": {
+        "alignment": "top"
+      },
+      "content": {
+        "title": "what is traily",
+        "description": "Since the hype from Pokemon Go in 2016, geoloaction apps have soared in interest. <br />Local businesses have been trying to get themselves 'on the map' and we have been helping them. <br /><br />Until now it has felt like a very seperated approach with local businesses asking us to create an app that would allow their customers to participate in a unique trail. <br /><br />After creating numerous apps we felt there needed to be a unified approach that allowed businesses to create their own branded trails and offer it to their own clients, without the need for creating an individual app everytime. <br/><br/>And so, <span class='dot'>traily</span> was born."
+      }
+    },
+    {
+      "cssId": "test02",
+      "backgroundColor": "#eee",
+      "layout": {
+        "alignment": "top"
+      },
+      "content": {
+        "title": "No access to Real Time Data",
+        "description": "A major challenge faced by Tourist Boards is the delay between visits and obtaining metrics. <br />Often metrics are only available months later."
+      }
+    },
+    {
+      "cssId": "test03",
+      "backgroundColor": "#fff",
+      "layout": {
+        "alignment": "top"
+      },
+      "content": {
+        "title": "Visitor Retention",
+        "description": ""
+      }
+    },
+    {
+      "cssId": "test04",
+      "backgroundColor": "#eee",
+      "layout": {
+        "alignment": "top"
+      },
+      "content": {
+        "title": "Outdated Print",
+        "description": ""
+      }
+    },
+    {
+      "cssId": "test01",
+      "backgroundColor": "#eee",
+      "layout": {
+        "alignment": "top"
+      },
+      "content": {
+        "title": "tourism metrics",
+        "description": "Almost 85 percent of tourists use smartphones while abroad. <br />30 percent of travelers found accommodation via smartphones <br />72 percent of post-vacation photos end up on social networks <br/>15 percent of leisure travelers download tourism apps prior to their trips"
+      }
+    },
+    {
+      "cssId": "test3",
+      "backgroundColor": "#fff",
+      "layout": {
+        "alignment": "left"
+      },
+      "image": "story/place-discovery.png",
+      "content": {
+        "icon": "map-of-roads.svg",
+        "title": "Place Discovery",
+        "description": "Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. My text is long and beautiful, as, it has been well documented, are various other parts of my website."
+      }
+    },
+    {
+      "cssId": "test2",
+      "backgroundColor": "#eee",
+      "layout": {
+        "alignment": "right"
+      },
+      "image": "story/social-sharing.png",
+      "content": {
+        "icon": "network.svg",
+        "title": "Social Sharing",
+        "description": "Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. My text is long and beautiful, as, it has been well documented, are various other parts of my website."
+      }
+    },
+    {
+      "cssId": "test1",
+      "backgroundColor": "#fff",
+      "layout": {
+        "alignment": "left"
+      },
+      "image": "story/offline-app.png",
+      "content": {
+        "icon": "cloud-computing.svg",
+        "title": "Offline First App",
+        "description": ""
+      }
+    },
+    {
+      "cssId": "test3",
+      "backgroundColor": "#fff",
+      "layout": {
+        "alignment": "left"
+      },
+      "image": "story/inapp-cms.png",
+      "content": {
+        "icon": "duplicate-content.svg",
+        "title": "In-App CMS",
+        "description": "Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. My text is long and beautiful, as, it has been well documented, are various other parts of my website."
+      }
+    },
+    {
+      "cssId": "test2",
+      "backgroundColor": "#eee",
+      "layout": {
+        "alignment": "right"
+      },
+      "image": "story/real-time-data.png",
+      "content": {
+        "icon": "chart.svg",
+        "title": "Real Time User Data",
+        "description": "Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. My text is long and beautiful, as, it has been well documented, are various other parts of my website."
+      }
+    },
+    {
+      "cssId": "test1",
+      "backgroundColor": "#fff",
+      "layout": {
+        "alignment": "left"
+      },
+      "image": "story/visitor-retention.png",
+      "content": {
+        "icon": "single.svg",
+        "title": "Visitor Retention",
+        "description": ""
+      }
+    },
+    {
       "cssId": "test1",
       "backgroundColor": "#fff",
       "layout": {
@@ -15,7 +148,7 @@
       "content": {
         "icon": "wrench.svg",
         "title": "create",
-        "description": "Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. My text is long and beautiful, as, it has been well documented, are various other parts of my website."
+        "description": "<span class='dot'>traily</span> allows businesses to create as many trails as they want within their own branding area of an app. <br /><br />It's simple, intuitive and quick. <br /><br /><span class='dot'>1. give the trail a name</span> <br /><span class='dot'>2. create a trail point</span> <br /><span class='dot'>3. add content and media</span>"
       }
     },
     {

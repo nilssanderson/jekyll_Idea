@@ -6,9 +6,11 @@
   >
 
     <!-- section image -->
-    <div class="image">
-      <img src="{{ site.baseurl }}/images/{{ section.image }}" alt="{{ section.content.title }}" />
-    </div>
+    {% if section.image %}
+      <div class="image">
+        <img src="{{ site.baseurl }}/images/{{ section.image }}" alt="{{ section.content.title }}" />
+      </div>
+    {% endif %}
 
     <div class="content">
       <!-- section icon -->
@@ -17,10 +19,14 @@
       {% endif %}
 
       <!-- section title -->
-      <h1 class="dot">{{ section.content.title }}</h1>
+      {% if section.content.title %}
+        <h1 class="dot">{{ section.content.title }}</h1>
+      {% endif %}
 
       <!-- section description -->
-      <p>{{ section.content.description }}</p>
+      {% if section.content.description %}
+        <p>{{ section.content.description }}</p>
+      {% endif %}
     </div>
 
   </section>
