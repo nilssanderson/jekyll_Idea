@@ -199,6 +199,16 @@ section.content {
         padding: $header-height;
     }
 
+    &.columns {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        .content {
+            margin: 0;
+        }
+    }
+
     &.left {
         flex-direction: column;
 
@@ -267,6 +277,179 @@ section.content {
 
         @include media-query($large) {
             margin: ($base-padding * 6);
+        }
+    }
+}
+
+.cards .section-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto ($base-font-size * 3);
+    padding: 0;
+
+    @include media-query($large) {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1000px;
+        width: 100vw;
+    }
+
+    .section-item {
+        background-color: #fefefe;
+        background-image: none !important;
+        background-position: center center;
+        background-size: cover;
+        box-shadow: 0 0 30px 0px #999;
+        border-radius: 5px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: auto;
+        justify-content: flex-start;
+        margin: ($base-padding * 4);
+        overflow: hidden;
+        padding: ($base-padding * 4);
+        position: relative;
+        text-align: center;
+
+        @include media-query($large) {
+            min-height: 300px;
+            padding: ($base-padding * 4);
+        }
+
+        img {
+            display: inline-block;
+            height: 100%;
+            width: auto;
+        }
+
+        .item-title {
+            font-family: "OpenSansCondensed";
+            font-size: ($base-font-size * 1.2);
+            margin-top: ($base-font-size * 2);
+        }
+
+        .item-description {
+            font-family: "OpenSans";
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .item-icon-wrapper {
+            border-radius: 50%;
+            display: flex;
+            height: 100px;
+            margin: 0 auto;
+            width: 100px;
+        }
+
+        .item-icon {
+            height: auto;
+            margin: 0 auto;
+            width: 70px;
+
+            @include media-query($large) {
+                display: block;
+            }
+        }
+    }
+
+    .icon {
+        display: none;
+        width: 80px;
+
+        @include media-query($large) {
+            display: block;
+        }
+    }
+}
+
+.columns .section-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto ($base-font-size * 3);
+    padding: 0;
+
+    @include media-query($large) {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;        
+        width: 100vw;
+    }
+
+    .section-item {
+        background-color: #333;
+        background-image: none !important;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: autp;
+        justify-content: flex-start;
+        // margin: ($base-padding * 2);
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        text-align: center;
+
+        @include media-query($large) {
+            height: 200px;
+            padding: ($base-padding * 2);
+        }
+
+        img {
+            display: inline-block;
+            height: 100%;
+            width: auto;
+        }
+
+        .item-title {
+            font-family: "OpenSansCondensed";
+            font-size: ($base-font-size * 4);
+            margin-bottom: 0;
+            margin-top: ($base-font-size * 2);
+            position: relative;
+            z-index: 2;
+        }
+
+        .item-description {
+            font-family: "OpenSans";
+            margin-bottom: 0;
+            margin-top: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .item-icon-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -60px !important;
+            margin-left: -60px !important;
+            opacity: .2;
+            z-index: 1;
+        }
+
+        .item-icon {
+            display: none;
+            height: auto;
+            margin: 0 auto;
+            width: 120px;
+
+            @include media-query($large) {
+                display: block;
+            }
+        }
+    }
+
+    .icon {
+        display: none;
+        width: 80px;
+
+        @include media-query($large) {
+            display: block;
         }
     }
 }
