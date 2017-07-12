@@ -1,3 +1,5 @@
+console.log("JS LOADED");
+$ = jQuery;
 $( document ).ready(function() {
 
   $('.cta').click(function() {
