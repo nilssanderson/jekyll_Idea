@@ -88,7 +88,7 @@
     },
     {
       "cssId": "test3",
-      "backgroundColor": "#fff",
+      "backgroundColor": "#eee",
       "layout": {
         "alignment": "left"
       },
@@ -101,7 +101,7 @@
     },
     {
       "cssId": "test2",
-      "backgroundColor": "#eee",
+      "backgroundColor": "#fff",
       "layout": {
         "alignment": "right"
       },
@@ -114,9 +114,9 @@
     },
     {
       "cssId": "test1",
-      "backgroundColor": "#fff",
+      "backgroundColor": "#eee",
       "layout": {
-        "alignment": "left"
+        "alignment": "right"
       },
       "image": "story/offline-app.png",
       "content": {
