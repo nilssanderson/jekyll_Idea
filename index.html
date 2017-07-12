@@ -6,9 +6,28 @@ title: Your New Jekyll Site
 <section id="welcome">
   <h1>A new way to explore</h1>
   <h3>{{ site.data.site-info.site-description }}</h3>
+
+  <!--<script type="text/javascript">
+    $( document ).ready(function() {
+
+      $('.cta').click(function() {
+        var p = $( "p:first" );
+        $( "p:last" ).text( "scrollTop:" + p.scrollTop() );
+      });
+
+      console.log('hello');
+      // $('.menu-icon').click(function() {
+      //   console.log('hello');
+      //   $(this).toggleClass('highlight');
+      // });
+    });
+
+  </script>-->
+
   <a class="btn cta">Call to action</a>
 </section>
 
+<div id="scrollToHere"></div>
 {% include content.html %}
 
 <section id="newsletter">
