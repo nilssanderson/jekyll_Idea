@@ -109,27 +109,27 @@
       "content": {
         "icon": "network.svg",
         "title": "Social Sharing",
-        "description": "<span class='dot'>traily</span> allows your guests to share to their family and friends when they are at one of your trail POIs."
+        "description": "<span class='dot'>traily</span> allows your guests to share to their family and friends when they are at one of your locations."
       }
     },
     {
       "cssId": "test1",
       "backgroundColor": "#eee",
       "layout": {
-        "alignment": "right"
+        "alignment": "left"
       },
       "image": "story/offline-app.png",
       "content": {
         "icon": "cloud-computing.svg",
         "title": "Offline First App",
-        "description": "Not all of your POIs will be in an area where a inernet connection is available. <br /><br />The offline experience is seamless and any interactions with the app while offline will be synced to the backend service once a network connection is reestablished. <br /><br />Mark certain POIs as network blackspots within the CMS and the app will pre-download content for offline access at these locations."
+        "description": "Not all of your POIs will be in an area where a internet connection is available. <br /><br />The offline experience is seamless and any interactions with the app while offline will be synced to the analytics service once a network connection is reestablished. <br /><br />Mark certain POIs as network blackspots within the CMS and the app will pre-download content for offline access at these locations."
       }
     },
     {
       "cssId": "test3",
       "backgroundColor": "#fff",
       "layout": {
-        "alignment": "left"
+        "alignment": "right"
       },
       "image": "story/inapp-cms.png",
       "content": {
@@ -142,7 +142,7 @@
       "cssId": "test2",
       "backgroundColor": "#eee",
       "layout": {
-        "alignment": "right"
+        "alignment": "left"
       },
       "image": "story/real-time-data.png",
       "content": {
@@ -155,7 +155,7 @@
       "cssId": "test1",
       "backgroundColor": "#fff",
       "layout": {
-        "alignment": "left"
+        "alignment": "right"
       },
       "image": "story/visitor-retention.png",
       "content": {
